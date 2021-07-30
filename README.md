@@ -49,7 +49,13 @@ This is a bare bones Rails 6.1 starter app with a Postgresql database and React 
 
 * Webpacker
 ```bash
-  bundle exec rails webpacker:compile #(maybe clean)  <<-- figure this one out
+  bundle exec rails webpacker:binstubs # webpack won't be available after cloning
+```
+```bash
+  bundle exec rails yarn:install  # get all the good stuff identified by yarn
+```
+```bash
+  bundle exec rails webpacker:compile # this isn't necessary as everything will compile when the development server starts
 ```
 
 ## Does it work?
