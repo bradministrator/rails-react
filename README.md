@@ -5,10 +5,7 @@ This is a bare bones Rails 6.1 starter app with a Postgresql database and React 
 * Ruby version
   2.6.5
 
-* System dependencies
-  [rvm](https://rvm.io/)
-  [direnv](https://direnv.net/)
-
+* Ensure [Postgresql](https://www.postgresql.org/) is installed and the service/daemon is running
 
 * Configuration
   ### Managing ruby versions:
@@ -21,9 +18,12 @@ This is a bare bones Rails 6.1 starter app with a Postgresql database and React 
     rvm gemset create et
   ```
 
-  - Create a .envrc in the root of the project and set the following environment variables
+  rvm is not necessary, but this is for my personal use ;-)
 
-  ##Database:
+  - Set the folowing environment variables (found in config/database.yml)
+  - Alternatatively use a tool like [direnv](https://direnv.net/) to manage environment variables
+
+  ### Database:
   ```bash
     DEV_DB_DATABASE_HANDLE=
     DEV_DB_USERNAME=
@@ -36,3 +36,9 @@ This is a bare bones Rails 6.1 starter app with a Postgresql database and React 
   ```bash
     bundle exec rails db:create
   ```
+  
+## Does it work?
+  ```bash
+    bundle exec rails server
+  ```
+  http://localhost:3000
