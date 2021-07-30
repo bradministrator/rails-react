@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: et_test
+  database: <%= ENV['TEST_DB_DATABASE_HANDLE'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: et_production
-  username: et
-  password: <%= ENV['ET_DATABASE_PASSWORD'] %>
+  database: <%= ENV['PROD_DB_DATABASE_HANDLE'] %>
+  username: <%= ENV['PROD_DB_DATABASE_USERNAME'] %>
+  password: <%= ENV['PROD_DB_DATABASE_PASSWORD'] %>
