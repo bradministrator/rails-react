@@ -30,13 +30,28 @@ This is a bare bones Rails 6.1 starter app with a Postgresql database and React 
     DEV_DB_PASSWORD=
     DEV_DB_HOST=
     DEV_DB_PORT=
+
+    TEST_DB_DATABASE_HANDLE=
+
+    PROD_DB_DATABASE_HANDLE=
+    PROD_DB_DATABASE_USERNAME=
+    PROD_DB_DATABASE_PASSWORD=
   ```
+
+```bash
+  bundle install
+```
 
 * Database creation
   ```bash
     bundle exec rails db:create
   ```
-  
+
+* Webpacker
+```bash
+  bundle exec rails webpacker:compile #(maybe clean)  <<-- figure this one out
+```
+
 ## Does it work?
   ```bash
     bundle exec rails server
