@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/tictactoe', to: 'welcome#tictactoe'
   get '/react', to: 'welcome#react'
   get '/react-forms', to: 'welcome#react_forms'
+  get '/cvi', to: 'welcome#cvi'
 end

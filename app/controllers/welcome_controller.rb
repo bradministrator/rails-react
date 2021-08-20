@@ -14,4 +14,8 @@ class WelcomeController < ApplicationController
   def react_forms
     
   end
+
+  def cvi
+
+  end
 end
