@@ -1,0 +1,7 @@
+<%= 
+  content_tag :div, '', {id: 'backend', data: @backend_data.to_json}
+%>
+<div id="root"></div>
+<%= javascript_pack_tag 'react' %>
+
+<%= console %>
