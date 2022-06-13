@@ -18,4 +18,10 @@ class WelcomeController < ApplicationController
   def cvi
 
   end
+
+  def hexgrid
+  end
+
+  def canvas_tutorial
+  end
 end
